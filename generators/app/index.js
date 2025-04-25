@@ -106,8 +106,8 @@ module.exports = class extends BaseGenerator {
             },
 
             checkclientFramework() {
-                if (this.jhipsterAppConfig.clientFramework !== 'angular5' && this.jhipsterAppConfig.clientFramework !== 'angularX') {
-                    this.env.error(`${chalk.red.bold('ERROR!')} This module works only for Angular5...`);
+                if (this.jhipsterAppConfig.clientFramework !== 'angular') {
+                    this.env.error(`${chalk.red.bold('ERROR!')} This module works only for Angular...`);
                 }
             },
 
